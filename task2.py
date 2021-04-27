@@ -9,9 +9,8 @@ for line in FD:
     tmp = line.split(",")
     i = int(tmp[0])
     j = tmp[3]
-    #print(j)
     if i % 2 == 0:
-        print("%d行目:        4列目: %6s\n" %(i, j))
+        print("%d行目:          4列目: %6s\n" %(i, j))
     else:
         print("%d行目: 2列目+ 3列目: %.5f\n" %(i, float(tmp[1])+float(tmp[2])))
 FD.close()
